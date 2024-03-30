@@ -16,21 +16,18 @@ import java.time.Duration;
 import java.util.List;
 
 public class FindElementsTests {
-
     WebDriver driver;
 
     @BeforeMethod
     public void setUp () {
         driver = new ChromeDriver();
         driver.get("https://ilcarro.web.app");
-
+        //maximize browser to windows
         driver.manage().window().maximize();
-
+        // wait for elements on the site to load before starting the test
         driver.manage().timeouts(). implicitlyWait(Duration.ofSeconds(10));
 
     }
-
-
 
     @Test
     public void findElementByTagName() {
