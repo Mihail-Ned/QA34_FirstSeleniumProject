@@ -28,7 +28,6 @@ public class HW3FindElementsTestsByCssSelector {
     }
 
     //css selector
-
     @Test
     public void findElementByCssSelector() {
         //tage name = tag name

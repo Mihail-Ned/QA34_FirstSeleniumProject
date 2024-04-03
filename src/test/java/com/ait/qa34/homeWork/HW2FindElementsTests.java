@@ -33,11 +33,11 @@ public class HW2FindElementsTests {
     @Test
     public void findElementByTagName() {
 
-        //find element by tag name
+        // find element by tag name
         WebElement element = driver.findElement(By.tagName("h2")); // 7-element
         System.out.println(element.getText());
 
-        //find list of elements by tag name
+        // find list of elements by tag name
         List<WebElement> elements = driver.findElements(By.tagName("h2"));
         System.out.println(elements.size());
 
@@ -69,28 +69,28 @@ public class HW2FindElementsTests {
         List<WebElement> elements4 = driver.findElements(By.tagName("a"));
         System.out.println(elements4.size());
 
-        //span
+        // span
         WebElement element5 = driver.findElement(By.tagName("span")); //23-elements - GhroPath-23
         System.out.println(element5.getText());
 
         List<WebElement> elements5 = driver.findElements(By.tagName("span"));
         System.out.println(elements5.size());
 
-        //div
+        // div
         WebElement element6 = driver.findElement(By.tagName("div")); //150-elements - GhroPath-187
         System.out.println(element6.getText());
 
         List<WebElement> elements6 = driver.findElements(By.tagName("div"));
         System.out.println(elements6.size());
 
-        //ul
+        // ul
         WebElement element7 = driver.findElement(By.tagName("ul")); //16-elements - GhroPath-17
         System.out.println(element7.getText());
 
         List<WebElement> elements7 = driver.findElements(By.tagName("ul"));
         System.out.println(elements7.size());
 
-        //li
+        // li
         WebElement element8 = driver.findElement(By.tagName("li")); //77-elements - GhroPath-79
         System.out.println(element8.getText());
 
@@ -104,28 +104,28 @@ public class HW2FindElementsTests {
         List<WebElement> elements9 = driver.findElements(By.tagName("p"));
         System.out.println("tagName(\"p\"): " + elements9.size() + " elements");
 
-        //form
+        // form
         WebElement element10 = driver.findElement(By.tagName("form")); //1-element
         System.out.println(element10.getText());
 
         List<WebElement> elements10 = driver.findElements(By.tagName("form"));
         System.out.println("tagName(\"form\"): " + elements10.size() + " element");
 
-        //script
+        // script
         WebElement element11 = driver.findElement(By.tagName("script")); //19-elements - GhroPath-19
         System.out.println(element11.getText());
 
         List<WebElement> elements11 = driver.findElements(By.tagName("script"));
         System.out.println("tagName(\"script\"): " + elements11.size() + " elements");
 
-        //link
+        // link
         WebElement element12 = driver.findElement(By.tagName("link")); //6-elements - GhroPath-6
         System.out.println(element12.getText());
 
         List<WebElement> elements12 = driver.findElements(By.tagName("link"));
         System.out.println("tagName(\"link\"): " + elements12.size() + " elements");
 
-        //meta
+        // meta
         WebElement element13 = driver.findElement(By.tagName("meta")); //5-elements - GhroPath-5
         System.out.println(element13.getText());
 

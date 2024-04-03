@@ -81,14 +81,50 @@ public class FindElementsTests {
         //end on -> $
         driver.findElement(By.cssSelector("[href$='work']"));
 
-
-
-
     }
 
+    //xPath //
+@Test
+public void findElementByXPath() {
+    // tag name = //tag
+    // driver.findElement(By.tagName("h1"));
+    driver.findElement(By.xpath("//h1"));
 
-    //xPath
+    // id -> //tag[@id='idName']
+    // driver.findElement(By.id("city"));
+    driver.findElement(By.xpath("//*[@id='city']"));
 
+    //class name -> //tag[@class='className']
+    // driver.findElement(By.className("input-container"));
+    driver.findElement(By.xpath("//*[@class='input-container']"));
+
+    //contains -> //*[contains(@attr,'...')]
+    // driver.findElement(By.cssSelector("[href*='car']"));
+    driver.findElement(By.xpath("//*[@contains(@href,'car')]"));
+
+    //start -> //*[starts-with(@attr,'...')]
+    //driver.findElement(By.cssSelector("[href^='/let']"));
+    driver.findElement(By.xpath("//*[starts-with(@href,'/let')]"));
+
+    //text
+    driver.findElement(By.xpath("//span[text()=' Never mistaken for anything else ']"));
+    driver.findElement(By.xpath("//span[.=' Never mistaken for anything else ']"));
+    driver.findElement(By.xpath("//span[contains(text(),'mistake')]"));
+    driver.findElement(By.xpath("//span[contains(.,'mistake')]"));
+
+    // search of parent element - //input[@id='username']/..
+    // //div/a - child - css = div>a
+    // //div//a - any level child - css = div a
+
+    //tag1[.tag2[@attr='valve']]
+    //*[@id='firstName' or @name='LastName']
+    //*[@id='firstName' and @name='lastName']
+
+
+
+
+
+}//test
 
     @AfterMethod
     public void tearDown() {
