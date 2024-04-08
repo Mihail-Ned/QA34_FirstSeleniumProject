@@ -27,10 +27,10 @@ public class HW4FindElementsTestsByXpath {
         driver.manage().timeouts(). implicitlyWait(Duration.ofSeconds(10));
     }
 
-    //css selector
+    //xPath //
 
     @Test
-    public void findElementByCssSelector() {
+    public void findElementByXPath() {
         //tage name = tag name
         //driver.findElement(By.tagName("head"));
         //driver.findElement(By.cssSelector("head"));
